@@ -45,8 +45,19 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='content-body rainbow-bg'>
-          <h1>Montando página</h1>
+        <div className='content-body'>
+          <div className='content-body-barra-lateral-informacoes'>
+            <div>a</div>
+            <div>b</div>
+          </div>
+          <div className='content-body-central'>
+            <div className='content-body-central-title'>a</div>
+            <div className='content-body-central-text'>b</div>
+          </div>
+          <div className='content-body-barra-lateral-competencias'>
+            <div>c</div>
+            <div>d</div>
+          </div>
         </div>
       </div>
     </div>

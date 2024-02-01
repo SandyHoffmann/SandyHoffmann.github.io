@@ -37,13 +37,86 @@
 
 }
 .content-body{
-  min-width: 100%;
   height: 100%;
-  background-color: magenta;
+  background-color: #349999;
   background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1em;
+  /* align-items: center;
+  justify-content: center; */
+}
+.content-body-barra-lateral-informacoes{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 60% 40%;
+}
+
+.content-body-barra-lateral-informacoes>div{
+  width: 100%;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: black; 
+}
+
+.content-body-barra-lateral-informacoes>div:nth-child(1){
+  flex-grow: 2;
+  background-color: #C36DB4;
+
+}
+
+.content-body-barra-lateral-informacoes>div:nth-child(2){
+  flex-grow: 1;
+  background-color: #A54D97;
+  margin-top: 1em;
+}
+
+.content-body-barra-lateral-competencias{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-body-barra-lateral-competencias>div{
+  border: 1px solid black;
+}
+
+.content-body-barra-lateral-competencias>div:nth-child(1){
+  flex-grow: 2;
+  background-color: #C36DB4;
+
+}
+
+.content-body-barra-lateral-competencias>div:nth-child(2){
+  flex-grow: 1;
+  background-color: #A54D97;
+  margin-top: 1em;
+}
+
+
+.content-body-central{
+  width: 60%;
+  margin: 0em 1em 1em 1em;
+}
+
+.content-body-central>div{
+  border: 1px solid black;
+}
+
+.content-body-central>div:nth-child(1){
+  height: 10%;
+  background-color: #C36DB4;
+  margin: 0em 0em 1em 0em;
+
+}
+
+.content-body-central>div:nth-child(2){
+  height: 90%;
+  background-color: #A54D97;
 }
 
 .content-body>h1{
