@@ -1,38 +1,151 @@
 .App {
-  text-align: center;
-}
+  background-color: rgb(70, 70, 70);
+  background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--header-bg-color);
+  background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  border: 1px solid black;
+  border-style: double;
+  margin: 0.5em 0.5em 0em 0.5em;
+}
+
+.App-header p{
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.App-header>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-style: outset
+}
+
+.App-content{
+  height: 80vh;
+  background-color: var(--body-bg-color);
+  margin: 0em 0.5em 0.5em 0.5em;
+  border: 2px solid black;
+
+}
+.content-body{
+  min-width: 100%;
+  height: 100%;
+  background-color: magenta;
+  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content-body>h1{
+  margin: 0%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.App-header-title{
+  width: 100%;
+}
+
+.App-header-icons>div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0em 0.5em 0em 0.5em;
+
+}
+.App-header-icons>div:first-child{
+  border-right: 1px solid black;
+}
+
+.content-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #B1B1B1;
+  background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
+  border: 1px solid black;
+
+}
+
+.content-header>div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.content-header-pages>div{
+  padding: 0em 0.5em 0em 0.5em;
+  border: 1px solid black;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.content-header-icons>div{
+  padding: 0em 0.5em 0em 0.5em;
+  border: 1px solid black;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.rainbow-bg{
+  animation: rainbow-bg 9.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+  100%,0%{
+    background-color: rgb(255,0,0);
   }
-  to {
-    transform: rotate(360deg);
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
   }
 }
+
